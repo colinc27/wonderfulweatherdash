@@ -1,15 +1,15 @@
 const form = document.querySelector(".top-banner form");
 const input = document.querySelector(".top-banner input");
 const msg = document.querySelector(".top-banner .msg");
-const list = document.querySelector(".ajax-section .cities");
+const list = document.querySelector(".weather-section .cities");
 const apiKey = "19eb366fa5e3323fd6b5b4d4900ebba2";
 
 form.addEventListener("submit", e => {
   e.preventDefault();
-  const listItems = list.querySelectorAll(".ajax-section .city");
+  const listItems = list.querySelectorAll(".weather-section .city");
   const inputVal = input.value;
 
-  //ajax here
+  //weather here
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${inputVal}&appid=${apiKey}&units=imperial`;
 
   fetch(url)

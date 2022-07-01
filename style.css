@@ -117,17 +117,17 @@ body {
 
 /* SECTION #2
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.ajax-section {
+.weather-section {
   margin: 70px 0 20px;
 }
 
-.ajax-section .cities {
+.weather-section .cities {
   display: grid;
   grid-gap: 32px 20px;
   grid-template-columns: repeat(4, 1fr);
 }
 
-.ajax-section .city {
+.weather-section .city {
   position: relative;
   padding: 40px 10%;
   border-radius: 20px;
@@ -135,7 +135,7 @@ body {
   color: var(--text_med);
 }
 
-.ajax-section .city::after {
+.weather-section .city::after {
   content: '';
   width: 90%;
   height: 50px;
@@ -148,31 +148,31 @@ body {
   background: var(--text_light);
 }
 
-.ajax-section figcaption {
+.weather-section figcaption {
   margin-top: 10px;
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
 
-.ajax-section .city-temp {
+.weather-section .city-temp {
   font-size: 5rem;
   font-weight: bold;
   margin-top: 10px;
   color: var(--text_dark);
 }
 
-.ajax-section .city sup {
+.weather-section .city sup {
   font-size: 0.5em;
 }
 
-.ajax-section .city-name sup {
+.weather-section .city-name sup {
   padding: 0.2em 0.6em;
   border-radius: 30px;
   color: var(--text_light);
   background: var(--orange);
 }
 
-.ajax-section .city-icon {
+.weather-section .city-icon {
   margin-top: 10px;
   width: 100px;
   height: 100px;
@@ -183,18 +183,18 @@ body {
     padding: 30px;
   }
   
-  .ajax-section .cities {
+  .weather-section .cities {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
 @media screen and (max-width: 700px) {
   .heading,
-  .ajax-section .city-temp {
+  .weather-section .city-temp {
     font-size: 3rem;
   }
   
-  .ajax-section {
+  .weather-section {
     margin-top: 20px;
   }
   
@@ -219,7 +219,7 @@ body {
     margin-top: 10px;
   }
 
-  .ajax-section .cities {
+  .weather-section .cities {
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -229,7 +229,7 @@ body {
     padding: 15px;
   }
   
-  .ajax-section .cities {
+  .weather-section .cities {
     grid-template-columns: repeat(1, 1fr);
   }
 }
